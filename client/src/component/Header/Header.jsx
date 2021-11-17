@@ -36,7 +36,7 @@ const Header = () => {
                 </NavItem>
                 <NavItem>
                 <NavLink >
-                    <Link style={{textDecoration: 'none'}} className="text-danger" to="/login" >Logout</Link>
+                    <a style={{textDecoration: 'none'}} className="text-danger" href="/login" onClick={() => sessionStorage.removeItem('token')} >Logout</a>
                 </NavLink>
                 </NavItem>
             </Nav>

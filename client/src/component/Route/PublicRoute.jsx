@@ -10,7 +10,7 @@ const PublicRoute = ({ component: Component, restricted, ...rest }) => {
     <Route
       {...rest}
       render={(props) =>
-        Auth.Perm.role_name && restricted ? <Redirect to="/" /> : <Component {...props} />
+        Auth.Perm.id && restricted ? <Redirect to="/" /> : <Component {...props} />
       }
     />
   );

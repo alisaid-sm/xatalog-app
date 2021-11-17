@@ -1,10 +1,9 @@
 import jwt from 'jsonwebtoken';
 
-const Perm = jwt.decode(localStorage.getItem('token')) || {role_name: ''};
+const Perm = jwt.decode(sessionStorage.getItem('token')) || {id: ''};
 
 const initialState = {
-    Perm,
-    haveSholawat: false
+    Perm
   }
   
   const Auth = (state = initialState, action = {}) => {
@@ -14,11 +13,6 @@ const initialState = {
              ...state,
              Perm: action.payload
           }
-      case "TOGGLE_HAVE_SHOLAWAT":
-        return {
-            ...state,
-            haveSholawat: !state.haveSholawat
-        }
       default:
         return state
     }

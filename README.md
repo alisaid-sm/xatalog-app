@@ -24,11 +24,12 @@
 
 ## API Documentation
 
-[POSTMAN DOCS](https://documenter.getpostman.com/view/12515508/UVCBBjfX)
+[DOCS](https://documenter.getpostman.com/view/12515508/UVCBBjfX)
 
 ## Demo
 
 [Frontend](https://xatalog-app.herokuapp.com/)
+
 [Backend](https://xatalog-app.herokuapp.com/api/health)
 
 ### notes

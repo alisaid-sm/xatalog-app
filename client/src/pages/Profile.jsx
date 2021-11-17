@@ -1,10 +1,17 @@
 import { Form, FormGroup, Input, Label } from 'reactstrap';
-import { Fragment, useEffect } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import ChangeTitle from '../component/ChangeTitle/ChangeTitle';
+import axios from 'axios';
+import config from '../config';
 
 const Profile = () => {
+    const [profile, setProfile] = useState({});
     ChangeTitle({title:'Profile - Xatalog'})
     useEffect(() => {
+        axios.get(`${config.api_url}/user`)
+        .then((res) => {
+            setProfile(res.data.data)
+        })
 		// eslint-disable-next-line 
 	}, [])
     return (
@@ -18,8 +25,8 @@ const Profile = () => {
                 <Input
                 id="Email"
                 name="email"
-                placeholder="test@gmail.com"
                 type="email"
+                defaultValue={profile.email || null}
                 readOnly
                 />
             </FormGroup>
@@ -30,8 +37,8 @@ const Profile = () => {
                 <Input
                 id="Username"
                 name="username"
-                placeholder="username"
                 type="text"
+                defaultValue={profile.username || null}
                 readOnly
                 />
             </FormGroup>

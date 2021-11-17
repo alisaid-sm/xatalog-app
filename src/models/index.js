@@ -1,5 +1,6 @@
 'use strict';
 
+require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
@@ -10,7 +11,16 @@ const db = {};
 
 let sequelize;
 if (config.url) {
-  sequelize = new Sequelize(config.url);
+  sequelize = new Sequelize(config.url, {
+    dialect: 'postgres',
+    protocol: 'postgres',
+    dialectOptions: {
+        ssl: {
+            require: true,
+            rejectUnauthorized: false
+        }
+    }
+  });
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
