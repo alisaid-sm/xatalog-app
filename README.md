@@ -11,9 +11,9 @@
 
 1. Clone this repo
 2. run ```npm install```
-3. then edit .env adjust to your local database configuration
+3. then edit src/config/config.js development adjust to your local database
 4. run ```npx sequelize db:migrate```
-5. then run ```npm start``` in your terminal
+5. then run ```npm start``` in your terminal or F5 if you using vscode
 
 ## How to run frontend locally
 
@@ -24,11 +24,12 @@
 
 ## API Documentation
 
-[POSTMAN DOCS](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+[POSTMAN DOCS](https://documenter.getpostman.com/view/12515508/UVCBBjfX)
 
 ## Demo
 
-[HEROKU](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+[Frontend](https://xatalog-app.herokuapp.com/)
+[Backend](https://xatalog-app.herokuapp.com/api/health)
 
 ### notes
 -

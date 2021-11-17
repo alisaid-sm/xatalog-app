@@ -1,5 +1,5 @@
 module.exports = {
     health: (req, res) => {
-        res.send('Status Ok');
+        return res.status(200).send('Status OK');
     }
 }
