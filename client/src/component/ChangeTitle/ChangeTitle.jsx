@@ -4,7 +4,7 @@ const ChangeTitle = ({title}) => {
 	useEffect(()=>{
 		document.title = title
 		return ()=>{
-			document.title = 'Dawetinyong'
+			document.title = 'Xatalog'
 		}
 	})
 }
@@ -14,7 +14,7 @@ export const ChangeTitleEslint = ({title}) => {
 	useEffect(()=>{
 		document.title = title
 		return ()=>{
-			document.title = 'Dawetinyong'
+			document.title = 'Xatalog'
 		}
 		//eslint-disable-next-line
 	}, [])
