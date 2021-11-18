@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => {
+        setIsOpen(!isOpen);
+    }
     return (
         <div>
         <Navbar
@@ -13,8 +17,8 @@ const Header = () => {
             <NavbarBrand href="/">
             Xatalog
             </NavbarBrand>
-            <NavbarToggler onClick={function noRefCheck(){}} />
-            <Collapse navbar>
+            <NavbarToggler onClick={toggle} />
+            <Collapse isOpen={isOpen} navbar>
             <Nav
                 className="me-auto"
                 navbar

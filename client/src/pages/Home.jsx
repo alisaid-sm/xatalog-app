@@ -35,8 +35,9 @@ const Home = () => {
 		// eslint-disable-next-line 
 	}, [])
     return (
-        <div className="p-3">
+        <div>
             {isActiveAlert?<Alert close={alertToggle} onConfirm={handleDelete} />:null}
+        <div className="p-3">
             <Row>
                 {
                     data.map(obj => {
@@ -62,6 +63,7 @@ const Home = () => {
                     })
                 }
             </Row>
+        </div>
         </div>
     )
 }
