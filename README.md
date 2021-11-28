@@ -32,9 +32,9 @@ Email : alisaid123@gmail.com
 
 Password : 1234
 
-[Frontend](https://xatalog-app.herokuapp.com/)
+Frontend : https://xatalog-app.herokuapp.com/
 
-[Backend](https://xatalog-app.herokuapp.com/api/health)
+Backend : https://xatalog-app.herokuapp.com/api/health
 
 ### notes
 -
