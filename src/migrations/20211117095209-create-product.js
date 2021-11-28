@@ -15,6 +15,10 @@ module.exports = {
       description: {
         type: Sequelize.TEXT
       },
+      user_id: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
