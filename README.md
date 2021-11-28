@@ -1,5 +1,5 @@
 # Xatalog App
-Aplikasi ini digunakan untuk pendataan barang-barang yang anda jual atau bisa juga untuk pendataan hal-hal lain
+Aplikasi ini digunakan untuk pendataan barang-barang yang anda jual
 
 ## Prerequisite
 
