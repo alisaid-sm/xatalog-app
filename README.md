@@ -1,4 +1,5 @@
 # Xatalog App
+Aplikasi ini digunakan untuk pendataan barang-barang yang anda jual atau bisa juga untuk pendataan hal-hal lain
 
 ## Prerequisite
 
@@ -24,7 +25,7 @@
 
 ## API Documentation
 
-[DOCS](https://documenter.getpostman.com/view/12515508/UVCBBjfX)
+https://documenter.getpostman.com/view/12515508/UVCBBjfX
 
 ## Demo
 
